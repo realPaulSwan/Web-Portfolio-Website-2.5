@@ -23,7 +23,12 @@ export class ProjectDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.name = this.route.snapshot.params.name;
 
-    this.loadProject(this.name);
+    this.myObservable.subscribe((val) =>{
+      this.loadProject(this.name);
+      console.log("OBSERVABLEACTIVE2")
+      //console.log(this.message," Observable from NgOnit Proj list");
+    })
+
 
   }
 
@@ -42,7 +47,13 @@ export class ProjectDetailsComponent implements OnInit {
 
   myObservable = new Observable((observer) =>{
 
+    if(this.projectList[1] != undefined){
 
+      console.log("OBSERVABLEACTIVE")
+    }
+    //receives message from service to indicate the data has been loaded so it can be displayed.
+
+    observer.next(this.projectList);
   })
 
 

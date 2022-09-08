@@ -1,3 +1,3 @@
 <div *ngIf = "(myObservable | async)" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 align-items-stretch">
-    <app-project-details-data [projectItemDetails]="projects" ></app-project-details-data>
+    <app-project-details-data [projectItemDetails] = "projectList[1]" ></app-project-details-data>
 </div>
