@@ -1,0 +1,12 @@
+<div *ngIf = "(myObservable | async) else elseBlock" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 align-items-stretch">
+
+    <div *ngFor = "let Project of projectList">
+        <app-project-item [projectItemTWO] = "Project"></app-project-item>
+
+    </div>
+
+</div>
+
+<ng-template #elseBlock>
+    Observable is loading. Please wait
+</ng-template>
