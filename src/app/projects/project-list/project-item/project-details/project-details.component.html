@@ -1,3 +1,8 @@
-<div *ngIf = "(myObservable | async)" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 align-items-stretch">
-    <app-project-details-data [projectItemDetails] = "projectList[1]" ></app-project-details-data>
+
+<div *ngIf = "(myObservable | async)" class="row container-md align-items-stretch">
+
+    <app-project-details-data [projectItemDetails] = "projectList[0]" ></app-project-details-data>
+
 </div>
+
+<h2>Hello</h2>

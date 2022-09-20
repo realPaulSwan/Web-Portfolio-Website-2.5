@@ -31,6 +31,6 @@ export class ProjectItemComponent implements OnInit{
 
   }
   thatClick() {
-    this.router.navigateByUrl('/projectDetails/'+ this.projectItemTWO.name);
+    this.router.navigateByUrl('/projectDetails/'+ this.projectItemTWO.name)
   }
 }

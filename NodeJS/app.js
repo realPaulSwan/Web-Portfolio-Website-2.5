@@ -3,6 +3,9 @@ const data = require('./data');
 
 // Initialize App
 const app = express();
+var nodemailer = require('nodemailer');
+
+//email initialize
 
 //Use this one!
 app.get('/filter/:filter_1/:filter_2/:filter_3/:filter_4/', (req, res, next) => {
@@ -123,6 +126,41 @@ app.use('/searchOld/', (req, res, next) => {
   });
   res.send(filteredUsers);
 });
+
+//mailer route
+
+app.use('/email_test/', (req, res, next) => {
+
+  const filters = req.query;
+
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'paul.eroy.swan@gmail.com',
+      pass: 'uzpkrcggfcqvppfi'
+    }
+  });
+
+
+  var mailOptions = {
+    from: 'multiversepawl@gmail.com',
+    to: 'peswan@live.com,unknown05@icloud.com',
+    subject: 'Get Petuskinated from my new web server',
+    html: '<h1>Welcome</h1><p>That was easy!</p>'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+
+  res.send(filters);
+});
+
 
 // Start server on PORT 5000
 app.listen(5000, () => {

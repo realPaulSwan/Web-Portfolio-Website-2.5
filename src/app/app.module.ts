@@ -24,9 +24,11 @@ import { HomeTextComponent } from './home/home-text/home-text.component';
 
 import { ProjectDetailsDataComponent } from './projects/project-list/project-item/project-details/project-details-data/project-details-data.component';
 
+import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
+
 
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent],
+  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, ProjectCarouselComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,

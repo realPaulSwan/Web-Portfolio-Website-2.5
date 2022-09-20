@@ -1,3 +1,17 @@
-<h1>Hi</h1>
 
-<h1>Proj {{this.projectItemDetails.name}}</h1>
+
+
+
+    <mat-card-title>Project {{this.projectItemDetails.name}}</mat-card-title>
+
+
+
+
+<app-project-carousel [slides]="slides" [animationType]="animationType"></app-project-carousel>
+
+
+        <p>{{this.projectItemDetails.short_description}}</p>
+
+        <button>Git Repository</button>
+
+

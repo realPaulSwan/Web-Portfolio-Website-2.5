@@ -44,7 +44,7 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   filteredFruits: Observable<string[]>;
   //output?
   fruits: string[] = [];
-  allFruits: string[] = ['NodeJS', 'PostgreSQL', 'AngularJS', 'Javascript', 'jQuery','Coursera','TypeScript','HTML','CSS','TypeScript'];
+  allFruits: string[] = ['Angular','AngularJS','CSS','Coursera','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript'];
 
   projectList: Project[] = [];
 

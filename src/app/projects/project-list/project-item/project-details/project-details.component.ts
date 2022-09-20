@@ -13,6 +13,7 @@ import{ProjectDetailService} from "../../../../services/project-detail.service";
 export class ProjectDetailsComponent implements OnInit {
 
   name = '';
+  id = 0;
 
   projectList: Project[] = [];
   message:string[] = [];
@@ -35,7 +36,7 @@ export class ProjectDetailsComponent implements OnInit {
   loadProject(name:string){
 
   this.projectDetailService.getProjects("name",name).subscribe((projects) =>{
-     this.projectList[1] = projects[1];
+     this.projectList[0] = projects[0];
     console.log(projects, this.name, "DetailsProjList2");
 
    });
@@ -47,7 +48,7 @@ export class ProjectDetailsComponent implements OnInit {
 
   myObservable = new Observable((observer) =>{
 
-    if(this.projectList[1] != undefined){
+    if(this.projectList[0] != undefined){
 
       console.log("OBSERVABLEACTIVE")
     }
