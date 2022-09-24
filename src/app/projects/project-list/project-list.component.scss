@@ -1,0 +1,11 @@
+.fadeIn{
+  opacity: 0;
+  justify-items: center;
+  animation-name: example;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

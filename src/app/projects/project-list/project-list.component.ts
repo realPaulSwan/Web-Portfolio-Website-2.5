@@ -13,6 +13,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
 
 
+  firstload: boolean = true;
 
   message:string[] = [];
 
@@ -80,6 +81,11 @@ export class ProjectListComponent implements OnInit, OnDestroy {
     this.projectItemService.getProductsFilter(filter1,filter2,filter3,filter4).subscribe((projects) =>{
       this.projectList = projects;
       console.log(projects,"<-the projects message");
+      if(this.projectList.length == 0){
+        console.log("no projects");
+        !this.firstload;
+        //this.loadProjects("","","","");
+      }
     })
   }
 

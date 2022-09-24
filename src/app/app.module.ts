@@ -26,6 +26,8 @@ import { ProjectDetailsDataComponent } from './projects/project-list/project-ite
 
 import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
 
+//import { NgxCaptchaModule} from "ngx-captcha";
+import { RecaptchaModule } from "ng-recaptcha"
 
 @NgModule({
   declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, ProjectCarouselComponent],
@@ -38,7 +40,9 @@ import { ProjectCarouselComponent } from './projects/project-list/project-item/p
     MaterialExampleModule,
     ReactiveFormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //NgxCaptchaModule,
+    RecaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent],

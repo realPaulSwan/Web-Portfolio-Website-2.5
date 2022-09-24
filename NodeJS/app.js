@@ -1,10 +1,21 @@
 const express = require('express');
 const data = require('./data');
+const bodyParser = require('body-parser');
+
 
 // Initialize App
 const app = express();
+//const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+
+/*app.configure(function(){
+  app.use(express.bodyParser());
+});
+
+ */
 var nodemailer = require('nodemailer');
 
+app.use(express.json());
 //email initialize
 
 //Use this one!
@@ -129,10 +140,24 @@ app.use('/searchOld/', (req, res, next) => {
 
 //mailer route
 
-app.use('/email_test/', (req, res, next) => {
+app.post('/api/email/',  (req, res) => {
 
-  const filters = req.query;
+  //const filters = req.query;
+  //https://masteringjs.io/tutorials/express/post
+  req.body;
+  res.json(req.body);
 
+
+
+  const {name_var, feedback_var} = req.body
+
+ // let testvar = req.body.name_var
+
+
+
+  console.log(name_var, " name_var")
+      // console.log(testvar, " test_var");
+//console.log(req.query,"reqeuery");
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -140,26 +165,65 @@ app.use('/email_test/', (req, res, next) => {
       pass: 'uzpkrcggfcqvppfi'
     }
   });
-
-
+  //https://stackoverflow.com/questions/58653990/how-change-the-sender-name-of-a-mail-with-nodemailer
+  let from = `PortfolioMessenger <paul.eroy.swan@gmail.com>`
   var mailOptions = {
-    from: 'multiversepawl@gmail.com',
-    to: 'peswan@live.com,unknown05@icloud.com',
-    subject: 'Get Petuskinated from my new web server',
-    html: '<h1>Welcome</h1><p>That was easy!</p>'
+    from: from,
+    to: 'peswan@live.com',
+    subject: 'Thank You for sending feedback about my Portfolio',
+    html: '<h1>Thank You for sending feedback about my Portfolio</h1>' +
+        '<p>We will take your feedback in to consideration.</p>' +
+        feedback_var +
+        '<small>This is an automatic email_3</small>',
+    context: {
+      feedback_var,
+    },
+  };
+//https://www.w3schools.com/nodejs/nodejs_email.asp
+//https://stackoverflow.com/questions/53496562/sending-html-template-through-mail-using-node-js-node-mailer
+
+  var mailOptions_2 = {
+    from: from,
+    to: name_var,
+    subject: 'Thank You for sending feedback about my Portfolio',
+    html: '<h1>Thank You for sending feedback about my Portfolio</h1>' +
+        '<p>We will take your feedback in to consideration.</p>' + feedback_var + '<small>This is an automatic email_2</small>',
+    context: {
+    feedback_var, name_var,
+  },
   };
 
+
+
+  setTimeout(             //Set a time out period to allow the data to insert into users
+      () => {
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
     } else {
       console.log('Email sent: ' + info.response);
+      console.log('Got body2: ', req.body);
+      res.sendStatus(200);
     }
   });
 
+    },
+    500 // the time to sleep to delay for
+);
+  transporter.sendMail(mailOptions_2, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent_2: ' + info.response);
+    }
+  });
 
-  res.send(filters);
+  //res.send(req.body);
+
+
 });
+
+//use .get
 
 
 // Start server on PORT 5000

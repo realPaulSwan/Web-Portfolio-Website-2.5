@@ -48,7 +48,7 @@ const data = [
     "GithubUrl": "",
     "detail_component_name": "",
     "tags": [
-      "Angular",
+      "AngularJS",
       "NodeJS",
       "PostgreSQL",
       ""
