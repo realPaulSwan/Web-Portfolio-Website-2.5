@@ -27,10 +27,11 @@ import { ProjectDetailsDataComponent } from './projects/project-list/project-ite
 import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
 
 //import { NgxCaptchaModule} from "ngx-captcha";
-import { RecaptchaModule } from "ng-recaptcha"
+import { RecaptchaModule } from "ng-recaptcha";
+import { DTCWebProjectRedirectComponent } from './redirects/dtcweb-project-redirect/dtcweb-project-redirect.component'
 
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, ProjectCarouselComponent],
+  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, ProjectCarouselComponent, DTCWebProjectRedirectComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,

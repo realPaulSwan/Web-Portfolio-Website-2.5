@@ -18,6 +18,15 @@ export class ProjectDetailsDataComponent implements OnInit {
 
   animationType = AnimationType.Scale;
 
+  setvar(){
+    //make sure link is loaded before log?
+    let GitUrl = this.projectItemDetails.githubUrl;
+  }
+
+  ngOnInit(): void {
+    console.log(this.projectItemDetails.githubUrl, "url")
+  }
+
   animationTypes = [
     {
       name: "Scale",
@@ -63,8 +72,7 @@ export class ProjectDetailsDataComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+
   setAnimationType(type: { value: AnimationType; }) {
     this.animationType = type.value;
     setTimeout(() => {

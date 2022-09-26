@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'contacts', component: ContactComponent },
   { path: 'projectDetails/:name', component: ProjectDetailsComponent}
 
+    //project redirects TBD.
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@ const data = [
     "short_description": "This is the current Website that you are viewing. It is designed to showcase my projects and give information about myself. Libraries used include Bootstrap and Material.",
     "likes": 0,
     "imageUrl": "shiba2.jpg",
-    "GithubUrl": "",
+    "GithubUrl": "Web-Portfolio-Website-2.5",
     "detail_component_name": "",
     "tags": [
       "Angular",
@@ -27,7 +27,7 @@ const data = [
 
     "likes": 0,
     "imageUrl": "shiba2.jpg",
-    "GithubUrl": "",
+    "GithubUrl": "Coursera-JS-Projects",
     "detail_component_name": "",
     "tags": [
       "Javascript",
@@ -45,7 +45,7 @@ const data = [
     "short_description": "This is the first iteration of the Portfolio Website. It is made using only AngularJS and highlights my first attempt at making a website using a JavaScript based framework and applying HTML and CSS as well as trying to layout a website.",
     "likes": 0,
     "imageUrl": "shiba2.jpg",
-    "GithubUrl": "",
+    "GithubUrl": "Portfolio-Website",
     "detail_component_name": "",
     "tags": [
       "AngularJS",
@@ -64,7 +64,7 @@ const data = [
 
     "likes": 0,
     "imageUrl": "minecraft/2019-12-19_21.20.19%20This%20one.png",
-    "GithubUrl": "",
+    "GithubUrl": "N/A",
     "detail_component_name": "",
     "tags": [
       "Minecraft",
@@ -83,7 +83,7 @@ const data = [
 
     "likes": 0,
     "imageUrl": "shiba2.jpg",
-    "GithubUrl": "",
+    "GithubUrl": "JPENJ-322-Library-Project",
     "detail_component_name": "",
     "tags": [
       "Javascript",
