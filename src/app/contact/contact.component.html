@@ -11,9 +11,9 @@
             <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
                 <div class="form-group">
                     <label for="name">Email Address</label>
-                    <input type="text" class="form-control" id="name"
+                    <input type="email" class="form-control" id="name"
                            required
-                           [(ngModel)]="model.name" name="name" minlength="3" maxlength="15" pattern = "[a-zA-Z0-9]+"
+                           [(ngModel)]="model.name" name="name" minlength="3" maxlength="45"
                            #name="ngModel">
                     <div [hidden]="name.valid || name.pristine"
                          class="alert alert-danger">

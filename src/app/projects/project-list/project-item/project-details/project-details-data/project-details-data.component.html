@@ -1,17 +1,33 @@
+<div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col-7 alterspacing">
+
+
+            <mat-card-title>Project {{this.projectItemDetails.name}}</mat-card-title>
+
+        <div class = "add-spacing">
+        <app-carousel [images] = "this.projectItemDetails.image_gallary"></app-carousel>
+        </div>
 
 
 
 
-    <mat-card-title>Project {{this.projectItemDetails.name}}</mat-card-title>
+
+            <p class="movedown">{{this.projectItemDetails.short_description}}</p>
+
+            <a href="https://github.com/realPaulSwan/{{this.projectItemDetails.long_description}}">Git
+                Repo {{this.projectItemDetails.githubUrl}}</a>
 
 
 
 
-<app-project-carousel [slides]="slides" [animationType]="animationType"></app-project-carousel>
+    </div>
 
 
-        <p>{{this.projectItemDetails.short_description}}</p>
-
-    <a href="https://github.com/realPaulSwan/{{this.projectItemDetails.githubUrl}}">Git Repo {{this.projectItemDetails.githubUrl}}</a>
-
-
+<div class="col">
+    <div>
+    </div>
+</div>
+</div>

@@ -4,10 +4,22 @@ const data = [
     "name": "Portfolio",
     "project_start_year": "2016-01-05T09:05:05.035Z",
     "project_end_year": "2016-01-05T09:05:05.035Z",
-    "long_description": "",
+    "long_description": "Web-Portfolio-Website-2.5",
     "short_description": "This is the current Website that you are viewing. It is designed to showcase my projects and give information about myself. Libraries used include Bootstrap and Material.",
     "likes": 0,
     "imageUrl": "shiba2.jpg",
+    "image_gallary": [
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1640844444545-66e19eb6f549?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+        imageAlt: 'nature1',
+      }
+    ],
     "GithubUrl": "Web-Portfolio-Website-2.5",
     "detail_component_name": "",
     "tags": [
@@ -27,6 +39,23 @@ const data = [
 
     "likes": 0,
     "imageUrl": "shiba2.jpg",
+    "image_gallary": [
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      }
+    ],
     "GithubUrl": "Coursera-JS-Projects",
     "detail_component_name": "",
     "tags": [
@@ -45,6 +74,23 @@ const data = [
     "short_description": "This is the first iteration of the Portfolio Website. It is made using only AngularJS and highlights my first attempt at making a website using a JavaScript based framework and applying HTML and CSS as well as trying to layout a website.",
     "likes": 0,
     "imageUrl": "shiba2.jpg",
+    "image_gallary": [
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      }
+    ],
     "GithubUrl": "Portfolio-Website",
     "detail_component_name": "",
     "tags": [
@@ -64,6 +110,23 @@ const data = [
 
     "likes": 0,
     "imageUrl": "minecraft/2019-12-19_21.20.19%20This%20one.png",
+    "image_gallary": [
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      }
+    ],
     "GithubUrl": "N/A",
     "detail_component_name": "",
     "tags": [
@@ -83,6 +146,23 @@ const data = [
 
     "likes": 0,
     "imageUrl": "shiba2.jpg",
+    "image_gallary": [
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      },
+      {
+        imageSrc:
+            'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageAlt: 'nature1',
+      }
+    ],
     "GithubUrl": "JPENJ-322-Library-Project",
     "detail_component_name": "",
     "tags": [

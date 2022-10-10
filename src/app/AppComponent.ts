@@ -12,12 +12,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'Web-Portfolio-Website';
+
+
+
+
   constructor(router: Router) {
     router.navigate(['home']);
   }
 
 }
-
+//image carousel goes here
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

@@ -12,6 +12,32 @@ import { AnimationType } from "./project-carousel/carousel.animations";
 })
 export class ProjectDetailsDataComponent implements OnInit {
 
+  //for carousel
+  images = [
+    {
+      imageSrc:
+          'https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      imageAlt: 'nature1',
+    },
+    {
+      imageSrc:
+          'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      imageAlt: 'nature2',
+    },
+    {
+      imageSrc:
+          'https://images.unsplash.com/photo-1640844444545-66e19eb6f549?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+      imageAlt: 'person1',
+    },
+    {
+      imageSrc:
+          'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      imageAlt: 'person2',
+    },
+  ]
+
+  //......
+
   @Input() projectItemDetails: Project = new Project();
 
   @ViewChild(ProjectCarouselComponent) carousel: ProjectCarouselComponent;
@@ -25,58 +51,9 @@ export class ProjectDetailsDataComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.projectItemDetails.githubUrl, "url")
+
   }
-
-  animationTypes = [
-    {
-      name: "Scale",
-      value: AnimationType.Scale
-    },
-    {
-      name: "Fade",
-      value: AnimationType.Fade
-    },
-    {
-      name: "Flip",
-      value: AnimationType.Flip
-    },
-    {
-      name: "Jack In The Box",
-      value: AnimationType.JackInTheBox
-    }
-  ];
-
-  //pass in the slides from data.
-  slides: Slide[] = [
-    {
-      headline: "For Your Current Mood",
-      src:
-          "https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-    },
-    {
-      headline: "Miouw",
-      src:
-          "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
-    },
-    {
-      headline: "In The Wilderness",
-      src:
-          "https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80"
-    },
-    {
-      headline: "Focus On The Writing",
-      src:
-          "https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
-    }
-  ];
 
   constructor() { }
 
-
-  setAnimationType(type: { value: AnimationType; }) {
-    this.animationType = type.value;
-    setTimeout(() => {
-      this.carousel.onNextClick();
-    });
-  }
 }

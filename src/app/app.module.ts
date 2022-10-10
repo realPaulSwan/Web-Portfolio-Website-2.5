@@ -24,27 +24,30 @@ import { HomeTextComponent } from './home/home-text/home-text.component';
 
 import { ProjectDetailsDataComponent } from './projects/project-list/project-item/project-details/project-details-data/project-details-data.component';
 
-import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
+//import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
 
 //import { NgxCaptchaModule} from "ngx-captcha";
 import { RecaptchaModule } from "ng-recaptcha";
 import { DTCWebProjectRedirectComponent } from './redirects/dtcweb-project-redirect/dtcweb-project-redirect.component'
+import {CarouselModule} from "./carousel/carousel.module";
 
+//, ProjectCarouselComponent
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, ProjectCarouselComponent, DTCWebProjectRedirectComponent],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    MatNativeDateModule,
-    MaterialExampleModule,
-    ReactiveFormsModule,
-    RouterModule,
-    AppRoutingModule,
-    //NgxCaptchaModule,
-    RecaptchaModule
-  ],
+  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, DTCWebProjectRedirectComponent],
+    imports: [
+        BrowserAnimationsModule,
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        MatNativeDateModule,
+        MaterialExampleModule,
+        ReactiveFormsModule,
+        RouterModule,
+        AppRoutingModule,
+        //NgxCaptchaModule,
+        RecaptchaModule,
+        CarouselModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
