@@ -6,6 +6,7 @@
 
 
             <mat-card-title>Project {{this.projectItemDetails.name}}</mat-card-title>
+        <h2>{{this.projectItemDetails.projectStartYear| date:'MMM y' }} - {{this.projectItemDetails.projectEndYear | date:'MMM y' }}</h2>
 
         <div class = "add-spacing">
         <app-carousel [images] = "this.projectItemDetails.image_gallary"></app-carousel>
@@ -16,9 +17,10 @@
 
 
             <p class="movedown">{{this.projectItemDetails.short_description}}</p>
-
+        <ng-container *ngIf = "this.projectItemDetails.url_link != ''">
             <a href="https://github.com/realPaulSwan/{{this.projectItemDetails.long_description}}">Git
-                Repo {{this.projectItemDetails.githubUrl}}</a>
+                Repo</a>
+        </ng-container>
 
 
 

@@ -46,11 +46,11 @@ export class ProjectDetailsDataComponent implements OnInit {
 
   setvar(){
     //make sure link is loaded before log?
-    let GitUrl = this.projectItemDetails.githubUrl;
+
   }
 
   ngOnInit(): void {
-    console.log(this.projectItemDetails.githubUrl, "url")
+
 
   }
 

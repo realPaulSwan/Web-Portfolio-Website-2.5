@@ -10,6 +10,7 @@ import {ProjectDetailsComponent} from "./projects/project-list/project-item/proj
 const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectsComponent},
   { path: 'contacts', component: ContactComponent },
   { path: 'projectDetails/:name', component: ProjectDetailsComponent}

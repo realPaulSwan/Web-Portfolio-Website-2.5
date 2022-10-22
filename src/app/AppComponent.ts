@@ -16,9 +16,11 @@ export class AppComponent {
 
 
 
+/*
   constructor(router: Router) {
     router.navigate(['home']);
   }
+ */
 
 }
 //image carousel goes here
