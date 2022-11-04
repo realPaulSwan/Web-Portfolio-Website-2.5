@@ -1,0 +1,24 @@
+
+<div class="text-position">
+<h1>I'm Paul</h1>
+<h3>An Aspiring Web Developer and College Student</h3>
+</div>
+
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <img *ngFor="let images of images; let i=index"
+         [src]="images.imageSrc" [alt]="images.imageAlt"
+         [ngClass]="{'image-active': selectedIndex === i}"
+
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i = index"
+              class="dot"
+              [ngClass]="{'active':selectedIndex === i}"
+              (click)="selectImage(i)">
+
+        </span>
+    </div>
+
+</div>
+
