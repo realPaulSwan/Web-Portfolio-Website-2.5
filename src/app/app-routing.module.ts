@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 
 
 import { ProjectsComponent } from './projects/projects.component';
@@ -18,8 +18,12 @@ const routes: Routes = [
     //project redirects TBD.
 ];
 
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: "enabled",
+  anchorScrolling: 'enabled'
+}
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

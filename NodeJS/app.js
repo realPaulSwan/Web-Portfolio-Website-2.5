@@ -170,11 +170,10 @@ app.post('/api/email/',  (req, res) => {
   var mailOptions = {
     from: from,
     to: 'peswan@live.com',
-    subject: 'Thank You for sending feedback about my Portfolio',
+    subject: 'New feedback about your Portfolio',
     html: '<h1>Thank You for sending feedback about my Portfolio</h1>' +
         '<p>We will take your feedback in to consideration.</p>' +
-        feedback_var +
-        '<small>This is an automatic email_3</small>',
+        feedback_var+ '<br><small>This is an automatic email</small>',
     context: {
       feedback_var,
     },
@@ -186,8 +185,8 @@ app.post('/api/email/',  (req, res) => {
     from: from,
     to: name_var,
     subject: 'Thank You for sending feedback about my Portfolio',
-    html: '<h1>Thank You for sending feedback about my Portfolio</h1>' +
-        '<p>We will take your feedback in to consideration.</p>' + feedback_var + '<small>This is an automatic email_2</small>',
+    html: '<h1>We will take your feedback in to consideration</h1>' +
+        feedback_var+ '<br><small>This is an automatic email</small>',
     context: {
     feedback_var, name_var,
   },

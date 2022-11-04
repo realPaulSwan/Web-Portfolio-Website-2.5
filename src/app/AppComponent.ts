@@ -14,6 +14,12 @@ export class AppComponent {
   title = 'Web-Portfolio-Website';
 
 
+  constructor(private router: Router) {
+  }
+
+  public buttonClick(fragment:string):void{
+    this.router.navigateByUrl('#' + fragment);
+  }
 
 
 /*

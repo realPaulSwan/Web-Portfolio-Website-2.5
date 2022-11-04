@@ -44,6 +44,7 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   filteredFruits: Observable<string[]>;
   //output?
   fruits: string[] = [];
+  fruits_blank: string[] = ['','','',''];
   allFruits: string[] = ['Angular','AngularJS','CSS','Coursera','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript'];
 
   projectList: Project[] = [];
@@ -123,6 +124,11 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   thisClick(){
 
     this.filterProjectListCommunicatorService.changeMessage(this.fruits);
+
+  }
+  thisClickRefresh(){
+
+    this.filterProjectListCommunicatorService.changeMessage(this.fruits_blank);
 
   }
 }
