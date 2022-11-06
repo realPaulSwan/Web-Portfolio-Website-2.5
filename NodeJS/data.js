@@ -5,7 +5,7 @@ const data = [
     "projectStartYear": "2022-08-03T19:38:34.203Z",
     "projectEndYear": "2023-01-05T09:05:05.035Z",
     "long_description": "Web-Portfolio-Website-2.5",
-    "short_description": "This is the current Website that you are viewing. It is designed to showcase my projects and give information about myself. Libraries used include Bootstrap and Material.",
+    "short_description": "This is the current Website that you are viewing. It is designed to showcase my projects and give information about myself. Libraries used include Bootstrap, Material and NodeMailer for the contact me form. The contact me form sends an email with information to both the submitter and myself.",
     "likes": 0,
     "imageUrl": "portfolio_item/localhost_4200_home.png",
     "url_link": "Web-Portfolio-Website-2.5",
