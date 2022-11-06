@@ -20,7 +20,7 @@ import { ProjectListComponent } from './projects/project-list/project-list.compo
 import { ProjectItemComponent } from './projects/project-list/project-item/project-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailsComponent } from './projects/project-list/project-item/project-details/project-details.component';
-import { HomeTextComponent } from './home/home-text/home-text.component';
+
 
 import { ProjectDetailsDataComponent } from './projects/project-list/project-item/project-details/project-details-data/project-details-data.component';
 
@@ -30,11 +30,11 @@ import { ProjectDetailsDataComponent } from './projects/project-list/project-ite
 import { RecaptchaModule } from "ng-recaptcha";
 import { DTCWebProjectRedirectComponent } from './redirects/dtcweb-project-redirect/dtcweb-project-redirect.component'
 import {CarouselModule} from "./carousel/carousel.module";
-import { HomeCarouselComponent } from './home/home-carousel/home-carousel.component';
+
 
 //, ProjectCarouselComponent
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, HomeTextComponent, ProjectDetailsDataComponent, DTCWebProjectRedirectComponent, HomeCarouselComponent],
+  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, ProjectDetailsDataComponent, DTCWebProjectRedirectComponent],
     imports: [
         BrowserAnimationsModule,
         BrowserModule,

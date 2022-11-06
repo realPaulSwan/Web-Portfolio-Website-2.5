@@ -9,9 +9,11 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   selectedIndex = 0;
+  fileName = "Paul_Swan_Resume"
 
   ngOnInit(): void {
   }
+
 
   //https://www.geeksforgeeks.org/how-to-make-a-carousel-using-css/
 

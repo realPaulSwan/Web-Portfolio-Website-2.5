@@ -7,7 +7,7 @@ body{
   text-align: center;
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 16px 12px #dce1e1;
+  box-shadow: 0 8px 6px #dce1e1;
 }
 
 .carousel-container img{
@@ -35,7 +35,7 @@ body{
   cursor: pointer;
   height: 13px;
   width: 13px;
-  background-color: #FFFFFF;
+  background-color: rgb(146, 146, 146);
   border-radius: 50%;
   display: inline-block;
   transition: 0.6s ease;
@@ -100,16 +100,16 @@ opacity: 1;
   right: 0;
 }
 .fa-arrow-circle-left{
-  border: solid #FFFFFF;
-  border-width: 0 1em 1em 0;
+  border: solid rgb(146, 146, 146);
+  border-width: 0 0.7em 0.7em 0;
   display: inline-block;
   padding: 10%;
   transform: rotate(135deg);
   opacity: 0.5;
 }
 .fa-arrow-circle-right{
-  border: solid #FFFFFF;
-  border-width: 0 1em 1em 0;
+  border: solid rgb(146, 146, 146);
+  border-width: 0 0.7em 0.7em 0;
   display: inline-block;
   padding: 10%;
   transform: rotate(-45deg);
