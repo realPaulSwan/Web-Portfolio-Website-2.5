@@ -129,6 +129,7 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   thisClickRefresh(){
 
     this.filterProjectListCommunicatorService.changeMessage(this.fruits_blank);
+    this.fruits = this.fruits_blank;
 
   }
 }
