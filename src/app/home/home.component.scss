@@ -8,317 +8,48 @@ body, html {
   box-sizing: border-box;
 }
 
-.bg-image {
-  /* Full height */
-  height: 50%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.testclass{
-  background-image: url("shiba2.jpg");
-}
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-}
-
 
 /*universal styles*/
 body {
   margin:0;
   font-family: Arial, serif;
 }
-.heading{
-  background-color: #1f262a;
-  width:100%;
-  height: 9em;
-  text-align: center;
-}
-.main-title{
-  padding: 3em;
-  color: white;
-}
-/*nav-bar*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), #2a231f);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-
-}
 .front-page-text{
   text-align: center;
   font-size: 4em;
 }
+h1{
+  min-height: 1em;
+  line-height: 1em;
+  margin: auto;
+}
+h3{
+  color: white;
+}
 h4{
   text-align: center;
+  font-size: 2.5em;
+  line-height: 1em;
 }
+
+h6{
+  padding: 1.5em;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  max-width: 40em;
+  margin: auto;
+}
+
 .button-container{
   text-align: center;
 }
-.profile-container{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px 0;
-  text-decoration: none;
-  float: right;
-}
-.profile-image{
-  border-radius: 50%;
-  width: 1.8em;
-  height: 1.8em;
-}
-.profile-image:hover{
-  box-shadow: 0 0 0.4em #ffffff;
-}
-.profile-container:hover{
 
-}
-/*front-page cover*/
-.front-button{
-  background-color: #556873;
-  width: 13em;
-  color: white;
-  border: 0.3em solid #556873;
-  padding: 1.06666em 1em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 30px;
-  border-radius: 7px;
-}
-.b2{
-
-  background-color: white;
-  color: #1f262a;
-
-}
-.cover-image{
-  width: 100%;
-}
-.front-image-container{
-  background: url("shiba2.jpg") no-repeat center fixed;
-  width: 100%;
-  height: 50em;
-  background-size: cover;
-  filter:brightness(70%);
-}
 .text-position{
   width: 100%;
   display: inline-block;
   justify-content: left;
   align-items: center;
   text-align: left;
-}
-.front-page-bar{
-  background-color: #1f262a;
-  width:100%;
-  height:5em;
-  text-align: center;
-
-  margin-top: 4em;
-}
-.front-page-title{
-  top: 50%;
-  left: 50%;
-  padding: 1.2em;
-  margin: 0;
-
-
-  background-color:#fff;
-  overflow:hidden;
-  display:inline-block;
-
-  font-weight:bold;
-
-  color:transparent;
-  font-size:200px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-
-}
-.frontpage-gallery-image{
-  width: 15em;
-  height: 15em;
-  margin: 1.5em;
-}
-
-
-/*generate_1*/
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #1f262a;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 50%;
-
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.form-container{
-  border-radius: 5px;
-  background-color: #1f262a;
-  padding: 20px;
-}
-/*move to table*/
-
-.sidebar{
-  width: 50%;
-  background-color: #1f262a;
-
-}
-.sidebar-wrapper{
-  display: inline-block;
-
-}
-
-label {
-  color: black;
-
-}
-.gen-image-output{
-  margin: 2em;
-}
-
-/*user generations*/
-.user-generation{
-  width: 15em;
-  height: 15em;
-  background-color: #2a231f;
-  margin: 1em;
-  display: inline-block;
-}
-.user-generation-container{
-}
-.sample-image{
-  width: 10em;
-  height: 10em;
-
-}
-/*about*/
-.float-left{
-  padding-top: 3em;
-  padding-bottom: 0;
-  padding-right: 0;
-  text-align: left;
-  margin: 0;
-  width: 50%;
-}
-
-.large-profile-image{
-  width: 8em;
-  height: 8em;
-  transform: translate(-10%, -110%);
-}
-/*buggy*/
-.display-image-small{
-  width: 2.7em;
-  height: 2.7em;
-  padding: 0.3em;
-  margin: 0;
-}
-.folder-title{
-  text-align: center;
-}
-.image-container{
-  color: white;
-}
-.form{
-  text-align: left;
-  margin: 2em;
-}
-.about-text-container{
-  margin-left: 8em;
-  margin-right: 8em;
-}
-.folder-graph-container{
-  width: 100%;
-
-}
-.folder-graph-gen{
-  background-color: gray;
-  color: white;
-}
-.folder-graph-gen-image{
-  width: 5em;
-  height: 5em;
-  margin: 1em;
-}
-.checkbox-float{
-  float: right;
-  text-align: right;
-  width: 100%;
-}
-.input-align{
-  float: right;
-}
-.p-bolded{
-  font-weight: bold;
-}
-h1{
-  min-height: 1em;
-  line-height: 1em;
-  margin: auto;
 }
 
 .about-me-title{
@@ -331,74 +62,6 @@ h1{
   background-color: #3f51b5;
   text-align: center;
 }
-
-
-.clip-text{
-  font-size: 6em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: .25em;
-  padding: .5em .75em;
-  text-align: center;
-  /* Color fallback */
-  color: #fff;
-  -webkit-background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-}
-
-
-/* Clip text element */
-.clip-text{
-
-  font-size: 6em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: .25em;
-  padding: .5em .75em;
-  text-align: center;
-  /* Color fallback */
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
-.clip-text:before,
-.clip-text:after{
-  position: absolute;
-  content: '';
-}
-
-/* Background */
-.clip-text:before{
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit;
-
-}
-
-/* Text Background (black zone) */
-.clip-text:after{
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background-color: #ffffff;
-}
-.clip-text_one {
-  background-image: url(https://picsum.photos/480/200?random);
-}
-
 #clip{
   /*
   Ensure background is added first
@@ -424,36 +87,18 @@ h1{
   line-height: 1.5em;
   margin: auto;
 }
-h4{
-  font-size: 2.5em;
-  line-height: 1em;
-}
 
 .alltext{
   text-align: right;
 }
 
 .mat-button-spacing{
-  margin: 4em;
-  margin-bottom: 5em;
+  margin: 4em 4em 5em;
   padding: 1.06666em 1em;
   text-align: center;
   width: 12em;
 }
 
-h3{
-  color: white;
-}
-rounded-button{
-  border-radius: 50%;
-}
-h6{
-  padding: 1.5em;
-  line-height: 1.25em;
-  font-size: 1.5em;
-  max-width: 40em;
-  margin: auto;
-}
 @media(screen and max-width: 500px){
 #clip{
   font-size: 5em;
