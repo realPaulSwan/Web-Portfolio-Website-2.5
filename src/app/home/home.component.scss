@@ -125,7 +125,7 @@ h6{
     line-height: 1.3em;
   }
 }
-
+/*reduce flicker*/
 @keyframes example {
   20%   {background-image: url(20151222_142811.jpg);
     -webkit-transform-style: preserve-3d;
