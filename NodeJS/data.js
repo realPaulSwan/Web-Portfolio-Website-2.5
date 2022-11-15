@@ -146,7 +146,7 @@ const data = [
     "projectStartYear": "2022-01-03T19:38:34.203Z",
     "projectEndYear": "2022-05-05T09:05:05.035Z",
     "long_description": "",
-    "short_description": "The librarian Portal is a group project that I worked on for Introduction to Software Engineering. The portal can add or delete data about a book to a database and send back the data to update a page. I mainly focused on the framework of the website and getting the stack consisting of the Database, NodeJS server and front-end to communicate with each other through Requests.",
+    "short_description": "The Librarian Portal is a group project that I worked on for Introduction to Software Engineering. The portal can add or delete data about a book to a database and send back the data to update a page. I mainly focused on the framework of the website and getting the stack consisting of the Database, NodeJS server and Angular front-end to communicate with each other through Requests.",
     "likes": 0,
     "imageUrl": "JPENG/github.com_realPaulSwan_JPENJ-322-Library-Project_tree_main_NodeJS.png",
     "url_link": "JPENJ-322-Library-Project",
