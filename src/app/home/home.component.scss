@@ -62,18 +62,17 @@ h6{
   background-color: #3f51b5;
   text-align: center;
 }
-#clip{
+.text-clip{
   /*
   Ensure background is added first
   make sure background image fits the text.
   background: linear-gradient(to bottom, #eee, rgba(222,112,6,0.2), #de7006),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTMuNzUgJyBpZD0nZmVDb2xvck1hdHJpeDMxMTknIC8+CgkJCTxmZUNvbXBvc2l0ZSBpbjI9J3Jlc3VsdDUnIG9wZXJhdG9yPSdpbicgaW49J1NvdXJjZUdyYXBoaWMnIHJlc3VsdD0ncmVzdWx0NicgaWQ9J2ZlQ29tcG9zaXRlMzEyMScgLz4KCQkJPGZlTW9ycGhvbG9neSBpbj0ncmVzdWx0Nicgb3BlcmF0b3I9J2RpbGF0ZScgcmFkaXVzPScxMCcgcmVzdWx0PSdyZXN1bHQzJyBpZD0nZmVNb3JwaG9sb2d5MzEyMycgLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgZmlsbD0nI2VlZWVlZScvPiAgICAgCgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4PScwJyB5PScwJyBpZD0ncmVjdDI5ODUnIHN0eWxlPSdmaWxsOiNlMDg3Mjg7ZmlsdGVyOnVybCgjZmlsdGVyMzExNSknIC8+Cjwvc3ZnPg==);
   */
-  animation-name: example;
-  animation-duration: 30s;
-  animation-delay: 0.2s;
 
   background-image: url(20151222_142811.jpg);
   background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
   font-family: 'Oswald', sans-serif;
 
@@ -98,12 +97,22 @@ h6{
   text-align: center;
   width: 12em;
 }
+.animation_apply{
+  animation-name: example;
+  animation-duration: 30s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
+}
 @media(screen and max-width: 500px){
-#clip{
+.clip-text{
   font-size: 5em;
   text-align: left;
   margin: 0.3em;
+
 }
   h4{
     text-align: left;
@@ -112,20 +121,27 @@ h6{
   }
 }
 @media(screen and max-width: 945px){
-  #clip{
+  .clip-text{
     line-height: 1.3em;
   }
 }
 
 @keyframes example {
-  0%  {background-image: url(20150803_205247.jpg);}
-  10%   {background-image: url(20151222_142811.jpg);}
-  20%  {background-image: url(IMG_20180405_194823.jpg);}
-  30%  {background-image: url(20151126_111734-1.jpg);}
-  40% {background-image: url(IMG_20151118_075920.jpg);}
-  50%  {background-image: url(2015-12-21_17.23.38.jpg);}
-  70% {background-image: url(2015-12-27_17.27.06.jpg);}
-  80%  {background-image: url(20160216_084248.jpg);}
-  90%  {background-image: url(20150803_205247.jpg);}
-  100% {background-image: url(20151222_142811.jpg);}
+  20%   {background-image: url(20151222_142811.jpg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;}
+  40%  {background-image: url(2015-12-21_17.23.38.jpg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;}
+  60%  {background-image: url(20151126_111734-1.jpg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;}
+  80% {background-image: url(20160216_084248.jpg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;}
+  100%  {background-image: url(20151222_142811.jpg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;}
 }
+
+
