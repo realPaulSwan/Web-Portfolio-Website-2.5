@@ -1,7 +1,7 @@
 const express = require('express');
 const data = require('./data');
 const bodyParser = require('body-parser');
-
+HOST = "https://paulswan.dev";
 
 // Initialize App
 const app = express();
@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
  */
 var nodemailer = require('nodemailer');
+const {hostname} = require("os");
 
 app.use(express.json());
 //email initialize
@@ -226,6 +227,7 @@ app.post('/api/email/',  (req, res) => {
 
 
 // Start server on PORT 5000
-app.listen(5000, () => {
-  console.log('Server started!');
+//paulswan.dev for hostname
+app.listen(5000,HOST,() => {
+  console.log('Server started!',HOST);
 });
