@@ -1,7 +1,7 @@
 const express = require('express');
 const data = require('./data');
 const bodyParser = require('body-parser');
-HOST = "178.63.63.115";
+HOST = "localhost";
 
 // Initialize App
 const app = express();
