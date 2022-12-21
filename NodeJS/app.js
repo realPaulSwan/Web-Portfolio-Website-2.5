@@ -6,7 +6,7 @@ HOST = "localhost";
 // Initialize App
 const app = express();
 //const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 /*app.configure(function(){
   app.use(express.bodyParser());
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
  */
 var nodemailer = require('nodemailer');
-const {hostname} = require("os");
+//const {hostname} = require("os");
 
 app.use(express.json());
 //email initialize
@@ -229,5 +229,5 @@ app.post('/api/email/',  (req, res) => {
 // Start server on PORT 5000
 //paulswan.dev for hostname
 app.listen(5000,HOST,() => {
-  console.log('Server started!',HOST);
+  console.log('Server started!',HOST, process.version);
 });

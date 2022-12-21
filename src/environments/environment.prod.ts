@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiBaseUrl: '178.63.63.115:5000'
+  apiBaseUrl: 'https://nodejsbackend2.azurewebsites.net'
 };
 /*update here for live*/
