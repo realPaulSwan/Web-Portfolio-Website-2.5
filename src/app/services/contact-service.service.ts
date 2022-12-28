@@ -19,11 +19,6 @@ export class ContactServiceService {
     sendContactData(name: string, feedback: string) {
 
 
-        const httpHeaders = new HttpHeaders({
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Expose-Headers': '*'
-        });
-
         const data = {name_var: name, feedback_var: feedback}
         //console.log();
         //  const data = ContactObjectModel
