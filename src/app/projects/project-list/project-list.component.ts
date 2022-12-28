@@ -57,11 +57,14 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
   ngOnInit(){
 
-    //put in observavle
-    this.myObservable.subscribe((val) =>{
+    //put in observavle, make it run once.
+
+    /*this.myObservable.subscribe((val) =>{
       this.loadProjects(this.message[0],this.message[1],this.message[2],this.message[3]);
       console.log(this.message," Observable from NgOnit Proj list");
     })
+    */
+
 
 //*ngIf(this.message == this.messageOld)
 
@@ -78,15 +81,22 @@ export class ProjectListComponent implements OnInit, OnDestroy {
   }
 
   loadProjects(filter1: string,filter2: string,filter3: string,filter4: string){
-    this.projectItemService.getProductsFilter(filter1,filter2,filter3,filter4).subscribe((projects) =>{
-      this.projectList = projects;
-      console.log(projects,"<-the projects message");
-      if(this.projectList.length == 0){
-        console.log("no projects");
-        !this.firstload;
-        //this.loadProjects("","","","");
-      }
-    })
+    let loaditer = 0;
+    if(loaditer == 0) {
+      this.projectItemService.getProductsFilter(filter1, filter2, filter3, filter4).subscribe((projects) => {
+        this.projectList = projects;
+        console.log(projects, "<-the projects message");
+        console.log(this.projectList, "<-the projectlist message");
+        //bug here changed from this.projectList.length to projects.length
+        loaditer = 1;
+        if (projects.length == 0) {
+          console.log("no projects");
+          !this.firstload;
+          //this.loadProjects("","","","");
+        }
+      })
+      console.log(loaditer,"load once");
+    }
   }
 
   Output(){
