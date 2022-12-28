@@ -58,11 +58,11 @@ export class ProjectListComponent implements OnInit, OnDestroy {
   ngOnInit(){
 
     //put in observavle
-    /*this.myObservable.subscribe((val) =>{
+    this.myObservable.subscribe((val) =>{
       this.loadProjects(this.message[0],this.message[1],this.message[2],this.message[3]);
       console.log(this.message," Observable from NgOnit Proj list");
     })
-*/
+
 //*ngIf(this.message == this.messageOld)
 
     console.log(this.message,"<-the message from NGONIT");
