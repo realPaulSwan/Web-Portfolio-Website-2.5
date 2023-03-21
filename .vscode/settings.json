@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f8eb445c-96a2-45dc-be9c-207312291ce2/AppServices/subscriptions/f8eb445c-96a2-45dc-be9c-207312291ce2/resourceGroups/PortfolioFrontEndResourceGroup/providers/Microsoft.Web/sites/PortfolioFrontEnd",
+    "appService.deploySubpath": "."
+}

@@ -56,10 +56,15 @@ export class ProjectListComponent implements OnInit, OnDestroy {
   })
 
   ngOnInit(){
+    let firstloadcomplete = 0;
 
     //put in observavle
+
     this.myObservable.subscribe((val) =>{
-      this.loadProjects(this.message[0],this.message[1],this.message[2],this.message[3]);
+      if(firstloadcomplete == 1) {
+        this.loadProjects(this.message[0], this.message[1], this.message[2], this.message[3]);
+      }
+      firstloadcomplete = 1;
       console.log(this.message," Observable from NgOnit Proj list");
     })
 
@@ -68,6 +73,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
     console.log(this.message,"<-the message from NGONIT");
 
     this.loadProjects("","","Tes","");
+    console.log(firstloadcomplete,"<-firstloadcomplete");
 
   }
 
@@ -81,6 +87,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
     this.projectItemService.getProductsFilter(filter1,filter2,filter3,filter4).subscribe((projects) =>{
       this.projectList = projects;
       console.log(projects,"<-the projects message");
+
       if(this.projectList.length == 0){
         console.log("no projects");
         !this.firstload;
