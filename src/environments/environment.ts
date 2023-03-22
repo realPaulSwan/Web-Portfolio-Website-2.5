@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   //apiBaseUrl: 'https://nodejsbackend2.azurewebsites.net'
-  apiBaseUrl: 'localhost:5000'
+  apiBaseUrl: 'http://localhost:5000'
 };
 
 /*

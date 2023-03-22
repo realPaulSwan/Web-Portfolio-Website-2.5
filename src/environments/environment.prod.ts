@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://nodejsbackend2.azurewebsites.net'
+  apiBaseUrl: 'http://localhost:5000'
 };
 /*update here for production*/
