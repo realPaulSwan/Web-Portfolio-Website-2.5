@@ -1,7 +1,6 @@
 import {Component, Input, ViewChild, OnInit} from '@angular/core';
 import {Project} from "../../../../../models/project.model";
 import {ProjectCarouselComponent} from "./project-carousel/project-carousel.component";
-import { Slide } from "./project-carousel/carousel.interface";
 import { AnimationType } from "./project-carousel/carousel.animations";
 
 
@@ -52,6 +51,12 @@ export class ProjectDetailsDataComponent implements OnInit {
   ngOnInit(): void {
 
 
+  }
+
+  openRepo() {
+    var gitUrl = "https://github.com/realPaulSwan/" + this.projectItemDetails.git_url;
+    window.open(gitUrl, "_blank");
+    console.log("testlogs",this.projectItemDetails.git_url)
   }
 
   constructor() { }

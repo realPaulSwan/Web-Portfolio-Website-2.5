@@ -2,7 +2,6 @@
     <mat-card class = "card shadow-sm">
 
         <mat-card-header>
-
             <mat-card-title class = "title-text-control">{{this.projectItemTWO.name}}</mat-card-title>
             <mat-card-subtitle>{{this.projectItemTWO.projectStartYear | date:'MMM y' }} - {{this.projectItemTWO.projectEndYear | date:'MMM y' }}</mat-card-subtitle>
         </mat-card-header>
@@ -10,23 +9,15 @@
 
         <mat-card-content class = "add-padding">
             <p class = "text-control">
-                {{this.projectItemTWO.short_description}}
-
+                {{this.projectItemTWO.description}}
             </p>
 
             <div class = "height-control">
             <div class="add-padding, inline" *ngFor = "let item of this.projectItemTWO.tags; let i = index;">
 
                 <ng-container *ngIf = "this.projectItemTWO.tags[i] != '' else elseBlock">
-
-
                     <mat-chip color="accent" selected>{{this.projectItemTWO.tags[i]}}</mat-chip>
-
-
-
-
                 </ng-container>
-
             </div>
             </div>
         </mat-card-content>

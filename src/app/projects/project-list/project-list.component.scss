@@ -2,7 +2,8 @@
   opacity: 0;
   justify-items: center;
   animation-name: example;
-  animation-duration: 2.5s;
+  /* time for rendering the error message */
+  animation-duration: 10s;
   animation-fill-mode: both;
 }
 @keyframes example {

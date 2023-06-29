@@ -11,20 +11,12 @@ import {FilterProjectListCommunicatorService} from "../../services/filter-projec
 })
 export class ProjectListComponent implements OnInit, OnDestroy {
 
-
-
   firstload: boolean = true;
 
   message:string[] = [];
 
-  //messageOld:string = "";
-
   subscription: Subscription = new Subscription();
 
-
-  //make sure to be projects?
-  //here is the last possible place
-  //top line works on HTML
   projectList: Project[] = [];
 
 
@@ -32,20 +24,6 @@ export class ProjectListComponent implements OnInit, OnDestroy {
       private projectItemService: ProjectItemService,
       private filterProjectListCommunicatorService: FilterProjectListCommunicatorService
   ) { }
-
-
-
-
-  /*obsValue = new Observable((observer) => {
-    console.log("Observable starts")
-    setTimeout(() => {
-      console.log("Returns value");
-      this.subscription = this.filterProjectListCommunicatorService.currentMessage.subscribe(message => this.message = message);
-      this.loadProjects("Angular","","","");
-      observer.next("1000")
-    }, 5000);
-  }).pipe(shareReplay());
-*/
 
   myObservable = new Observable((observer) =>{
     this.subscription = this.filterProjectListCommunicatorService.currentMessage.subscribe(message =>{
@@ -58,8 +36,6 @@ export class ProjectListComponent implements OnInit, OnDestroy {
   ngOnInit(){
     let firstloadcomplete = 0;
 
-    //put in observavle
-
     this.myObservable.subscribe((val) =>{
       if(firstloadcomplete == 1) {
         this.loadProjects(this.message[0], this.message[1], this.message[2], this.message[3]);
@@ -67,8 +43,6 @@ export class ProjectListComponent implements OnInit, OnDestroy {
       firstloadcomplete = 1;
       console.log(this.message," Observable from NgOnit Proj list");
     })
-
-//*ngIf(this.message == this.messageOld)
 
     console.log(this.message,"<-the message from NGONIT");
 
@@ -91,7 +65,6 @@ export class ProjectListComponent implements OnInit, OnDestroy {
       if(this.projectList.length == 0){
         console.log("no projects");
         !this.firstload;
-        //this.loadProjects("","","","");
       }
     })
   }

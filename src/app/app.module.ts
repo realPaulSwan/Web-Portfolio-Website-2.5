@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
 import {MaterialExampleModule} from '../material.module';
 import {AppComponent} from './AppComponent';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -9,7 +8,6 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import { ProjectsComponent } from './projects/projects.component';
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
-
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import { TypeFilterComponent } from './projects/type-filter/type-filter.component';
@@ -20,21 +18,14 @@ import { ProjectListComponent } from './projects/project-list/project-list.compo
 import { ProjectItemComponent } from './projects/project-list/project-item/project-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailsComponent } from './projects/project-list/project-item/project-details/project-details.component';
-
-
 import { ProjectDetailsDataComponent } from './projects/project-list/project-item/project-details/project-details-data/project-details-data.component';
-
-//import { ProjectCarouselComponent } from './projects/project-list/project-item/project-details/project-details-data/project-carousel/project-carousel.component';
-
-//import { NgxCaptchaModule} from "ngx-captcha";
 import { RecaptchaModule } from "ng-recaptcha";
-import { DTCWebProjectRedirectComponent } from './redirects/dtcweb-project-redirect/dtcweb-project-redirect.component'
 import {CarouselModule} from "./carousel/carousel.module";
 
 
 //, ProjectCarouselComponent
 @NgModule({
-  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, ProjectDetailsDataComponent, DTCWebProjectRedirectComponent],
+  declarations: [AppComponent, ProjectsComponent, TopNavBarComponent, TypeFilterComponent, ProjectSearchComponent, HomeComponent, DisplayCardsComponent, ProjectListComponent, ProjectItemComponent, ContactComponent, ProjectDetailsComponent, ProjectDetailsDataComponent],
     imports: [
         BrowserAnimationsModule,
         BrowserModule,
@@ -45,7 +36,6 @@ import {CarouselModule} from "./carousel/carousel.module";
         ReactiveFormsModule,
         RouterModule,
         AppRoutingModule,
-        //NgxCaptchaModule,
         RecaptchaModule,
         CarouselModule
     ],
