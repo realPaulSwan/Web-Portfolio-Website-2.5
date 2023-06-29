@@ -58,7 +58,7 @@ const data = [
     "tags": [
       "Javascript",
       "jQuery",
-      "",
+      "Coursera",
       ""
     ]
   },

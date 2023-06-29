@@ -2,7 +2,7 @@
     <mat-label>Search by Filter</mat-label>
     <mat-chip-list #chipList aria-label="Select Filters">
         <mat-chip
-                *ngFor="let fruit of fruits"
+                *ngFor="let fruit of tags"
                 (removed)="remove(fruit)">
             {{fruit}}
             <button matChipRemove>
@@ -12,14 +12,14 @@
         <input
                 placeholder="New fruit..."
                 #fruitInput
-                [formControl]="fruitCtrl"
+                [formControl]="tagCtrl"
                 [matAutocomplete]="auto"
                 [matChipInputFor]="chipList"
                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
                 (matChipInputTokenEnd)="add($event)">
     </mat-chip-list>
     <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-        <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+        <mat-option *ngFor="let fruit of filteredTags | async" [value]="fruit">
             {{fruit}}
         </mat-option>
     </mat-autocomplete>

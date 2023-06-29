@@ -1,4 +1,4 @@
 export class ContactObjectModel {
-    name: string;
+    email: string;
     feedback: string;
 }

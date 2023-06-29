@@ -25,21 +25,21 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   }
 
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  fruitCtrl = new FormControl('');
-  filteredFruits: Observable<string[]>;
-  fruits: string[] = [];
-  fruits_blank: string[] = ['','','',''];
-  allFruits: string[] = ['Angular','AngularJS','C#','Coursera','CSS','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript','Winforms','.NET'];
+  tagCtrl = new FormControl('');
+  filteredTags: Observable<string[]>;
+  tags: string[] = [];
+  tags_blank: string[] = ['','','',''];
+  tagsFruits: string[] = ['Angular','AngularJS','C#','Coursera','CSS','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript','Winforms','.NET'];
   projectList: Project[] = [];
 
 
 
-  @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement> | undefined;
+  @ViewChild('fruitInput') tagInput: ElementRef<HTMLInputElement> | undefined;
 
   constructor(private filterProjectListCommunicatorService:FilterProjectListCommunicatorService) {
-    this.filteredFruits = this.fruitCtrl.valueChanges.pipe(
+    this.filteredTags = this.tagCtrl.valueChanges.pipe(
         startWith(null),
-        map((fruit: string | null) => (fruit ? this._filter(fruit) : this.allFruits.slice())),
+        map((tags: string | null) => (tags ? this._filter(tags) : this.tagsFruits.slice())),
     );
   }
 
@@ -52,62 +52,58 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
 
     // Add our fruit
     if (value) {
-      this.fruits.push(value);
+      this.tags.push(value);
     }
 
     // Clear the input value
     event.chipInput!.clear();
 
-    this.fruitCtrl.setValue(null);
+    this.tagCtrl.setValue(null);
 
-    // fruits array Tests
+    // tags array Tests
     // console.log("add ran");
-    // console.log(this.fruits,"<---fruitList");
-    // console.log(this.fruits[0],"<-Fruits1");
-    // console.log(this.fruits[1],"<-Fruits2");
-    //console.log(this.fruits[2],"<-Fruits3");
-    //turn in to fruit output object.
+    //turn in to tag output object.
 
 
 
-    this.filterProjectListCommunicatorService.changeMessage(this.fruits);
+    this.filterProjectListCommunicatorService.changeMessage(this.tags);
 
     console.log("this fires");
 
   }
 
   remove(fruit: string): void {
-    const index = this.fruits.indexOf(fruit);
+    const index = this.tags.indexOf(fruit);
 
     if (index >= 0) {
-      this.fruits.splice(index, 1);
+      this.tags.splice(index, 1);
     }
   }
 
   selected(event: MatAutocompleteSelectedEvent): void {
-    this.fruits.push(event.option.viewValue);
-    if(this.fruitInput != undefined) {
-      this.fruitInput.nativeElement.value = '';
+    this.tags.push(event.option.viewValue);
+    if(this.tagInput != undefined) {
+      this.tagInput.nativeElement.value = '';
     }
-    this.fruitCtrl.setValue(null);
+    this.tagCtrl.setValue(null);
   }
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
 
-    return this.allFruits.filter(fruit => fruit.toLowerCase().includes(filterValue));
+    return this.tagsFruits.filter(fruit => fruit.toLowerCase().includes(filterValue));
   }
   //Search
   thisClick(){
 
-    this.filterProjectListCommunicatorService.changeMessage(this.fruits);
+    this.filterProjectListCommunicatorService.changeMessage(this.tags);
 
   }
   //Show All
   thisClickRefresh(){
 
-    this.filterProjectListCommunicatorService.changeMessage(this.fruits_blank);
-    this.fruits = [];
+    this.filterProjectListCommunicatorService.changeMessage(this.tags_blank);
+    this.tags = [];
 
   }
 }

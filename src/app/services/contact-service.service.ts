@@ -18,7 +18,7 @@ export class ContactServiceService {
     sendContactData(name: string, feedback: string) {
 
 
-        const data = {name_var: name, feedback_var: feedback}
+        const data = {email_var: name, feedback_var: feedback}
         return this.http.post(environment.apiBaseUrl + '/api/email/', data,{responseType:'text'}).subscribe(
             data => {
                 //console.log("POST Request is successful ", data);

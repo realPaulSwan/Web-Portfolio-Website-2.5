@@ -14,9 +14,9 @@
                     <input type="email" class="form-control" id="name"
                            required
                            [(ngModel)]="model.name" name="name" minlength="3" maxlength="45"
-                           #name="ngModel">
+                           #email="ngModel">
 
-                    <div [hidden]="name.valid || name.pristine"
+                    <div [hidden]="email.valid || email.pristine"
                          class="alert alert-danger">
                         Name is required
                     </div>

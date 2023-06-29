@@ -27,24 +27,10 @@ export class ContactComponent implements OnInit {
     email: string;
 
 
-    powers = ['Really Smart', 'Super Flexible',
-        'Super Hot', 'Weather Changer'];
+    powers = [];
     model = new Hero(18, '', this.powers[0], '');
 
     submitted = false;
-
-
-    newHero() {
-        this.model = new Hero(42, '', '');
-    }
-
-    skyDog(): Hero {
-        const myHero = new Hero(42, 'SkyDog',
-            'Fetch any object at any distance',
-            'Leslie Rollover');
-        console.log('My hero is called ' + myHero.name); // "My hero is called SkyDog"
-        return myHero;
-    }
 
     constructor(private contactServiceService: ContactServiceService) {
         this.captcha = '';
@@ -73,18 +59,9 @@ export class ContactComponent implements OnInit {
         }
 
 
-        //this.contactServiceService.sendContactData(this.model.name,SendText);
+
         console.log(this.model, SendText);
-        //send information to service.
 
 
     }
-
-    showFormControls(form: any) {
-        return form && form.controls.name &&
-            form.controls.name.value; // Dr. IQ
-    }
-
-
-
 }
