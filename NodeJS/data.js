@@ -171,7 +171,7 @@ const data = [
     "projectStartYear": "2023-01-03T19:38:34.203Z",
     "projectEndYear": "2023-05-05T09:05:05.035Z",
     "git_url": "SpreadsheetAppBackup",
-    "description": "The Spreadsheet project was created in Intro to Object Oriented Programming class. It is built using software design principals that I learned during the class.",
+    "description": "The Spreadsheet project was created in Intro to Object Oriented Programming class. It is built using software design principals and patterns that I learned during the class such as Polymorphism and Abstract Classes.",
     "likes": 0,
     "imageUrl": "Spreadsheet/SpreadsheetPicture.png",
     "image_gallary": [
@@ -195,7 +195,7 @@ const data = [
     "projectStartYear": "2023-04-03T19:38:34.203Z",
     "projectEndYear": "2023-05-05T09:05:05.035Z",
     "git_url": "Major-Project",
-    "description": "The Weather App is my final project for Web Development class. The App uses JavaScript, HTML and CSS and was designed in Figma. The app also uses Object Oriented Programming techniques.",
+    "description": "The Weather App is my final project for Web Development class. The App uses JavaScript, HTML and CSS and was designed in Figma. The app also applies Object Oriented Programming techniques such as Model-View-ViewModel which uses events",
     "likes": 0,
     "imageUrl": "WeatherApp/dtc477paul.reclaim.hosting_FinalProject_.png",
     "image_gallary": [
