@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   //apiBaseUrl: 'https://nodejsbackend2.azurewebsites.net'
-  apiBaseUrl: 'http://localhost:5000'
+  apiBaseUrl: 'https://us-central1-portfolioapp-7f160.cloudfunctions.net/app'
 };
 
 /*

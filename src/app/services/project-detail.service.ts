@@ -16,7 +16,7 @@ export class ProjectDetailService {
 
 
   getProjects(dataType: string, localKey: string): Observable<Project[]> {
-    return this.http.get<Project[]>(environment.apiBaseUrl + "/filter/?" + dataType + "=" + localKey);
+    return this.http.get<Project[]>(environment.apiBaseUrl + "/filter2/?" + dataType + "=" + localKey);
   }
 
 

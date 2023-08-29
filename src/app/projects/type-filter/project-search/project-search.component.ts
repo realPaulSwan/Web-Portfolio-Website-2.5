@@ -28,8 +28,8 @@ export class ProjectSearchComponent implements OnInit, OnDestroy{
   tagCtrl = new FormControl('');
   filteredTags: Observable<string[]>;
   tags: string[] = [];
-  tags_blank: string[] = ['','','',''];
-  tagsFruits: string[] = ['Angular','AngularJS','C#','Coursera','CSS','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript','Winforms','.NET'];
+  tags_blank: string[] = ['displayall','undefined','undefined','undefined'];
+  tagsFruits: string[] = ['Angular','AngularJS','CSharp','Coursera','CSS','HTML','Javascript', 'jQuery','NodeJS', 'PostgreSQL','TypeScript','Winforms','DotNET'];
   projectList: Project[] = [];
 
 

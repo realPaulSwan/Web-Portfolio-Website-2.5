@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'http://localhost:5000'
+  apiBaseUrl: 'https://us-central1-portfolioapp-7f160.cloudfunctions.net/app'
 };
 /*update here for production*/

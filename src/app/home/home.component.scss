@@ -97,8 +97,8 @@ h6{
   text-align: center;
   width: 12em;
 }
-/*
-.animation_apply{
+
+/*.animation_apply{
   animation-name: example;
   animation-duration: 30s;
   animation-delay: 1s;
@@ -122,11 +122,21 @@ h6{
     margin: 0.3em;
   }
 }
+
+@media(screen and max-width: 520px){
+  .text-clip{
+    font-size: 7em;
+    line-height: 1.4em;
+  }
+}
+
 @media(screen and max-width: 945px){
   .clip-text{
     line-height: 1.3em;
   }
 }
+
+
 /*reduce flicker*/
 /*
 @keyframes example {

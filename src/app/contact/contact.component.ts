@@ -55,7 +55,7 @@ export class ContactComponent implements OnInit {
             SendText = this.model.alterEgo;
             this.contactServiceService.sendContactData(this.model.name, SendText);
         } else {
-            this.contactServiceService.sendContactData(this.model.name, "Undefined");
+            this.contactServiceService.sendContactData(this.model.name, "Undefinedtest");
         }
 
 

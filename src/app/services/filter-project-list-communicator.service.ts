@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class FilterProjectListCommunicatorService {
 
-  FilterProjectList_Array: string[] = ['Test','Test1','Test2','Test3'];
+  FilterProjectList_Array: string[] = ['','Test1','Test2','Test3'];
   private messageSource = new BehaviorSubject(this.FilterProjectList_Array);
   currentMessage = this.messageSource.asObservable();
 

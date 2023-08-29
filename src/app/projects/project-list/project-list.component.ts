@@ -46,7 +46,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
     console.log(this.message,"<-the message from NGONIT");
 
-    this.loadProjects("","","Tes","");
+    this.loadProjects("displayall","undefined","undefined","undefined");
     console.log(firstloadcomplete,"<-firstloadcomplete");
 
   }

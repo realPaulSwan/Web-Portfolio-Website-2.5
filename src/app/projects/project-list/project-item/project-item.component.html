@@ -16,7 +16,9 @@
             <div class="add-padding, inline" *ngFor = "let item of this.projectItemTWO.tags; let i = index;">
 
                 <ng-container *ngIf = "this.projectItemTWO.tags[i] != '' else elseBlock">
+                    <ng-container *ngIf = "this.projectItemTWO.tags[i] != 'displayall'">
                     <mat-chip color="accent" selected>{{this.projectItemTWO.tags[i]}}</mat-chip>
+                    </ng-container>
                 </ng-container>
             </div>
             </div>
