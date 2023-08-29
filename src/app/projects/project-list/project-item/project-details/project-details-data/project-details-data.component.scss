@@ -21,3 +21,12 @@ mat-card-title{
 .containerSpacer{
   padding-top: 1em;
 }
+
+@media (max-width: 500px) {
+  .row {
+    padding: 0; /* Remove padding for smaller screens */
+  }
+  mat-card-title {
+    line-height: 1.5; /* Adjusted line height for smaller screens */
+  }
+}
